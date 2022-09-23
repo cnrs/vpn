@@ -10,7 +10,36 @@ https://www.infradead.org/ocserv/download/ocserv-1.1.6.tar.xz
 yum -y install ocserv.x86_64
 systemctl enable ocserv
 #systemctl restart ocserv
+```
 
+cd /etc/ocserv/
+#vim ocserv.conf
+```
+auth = "plain[passwd=/etc/ocserv/ocpasswd]"
+#auth = "certificate"  使用证书认证时切换到此项
+tcp-port = 443
+#udp-port = 443
+max-clients = 128
+max-same-clients = 4
+try-mtu-discovery = true
+server-cert = /data/ssl/server-cert.pem
+server-key = /data/ssl/server-key.pem
+ca-cert = /data/ssl/ca-cert.pem
+cert-user-oid = 2.5.4.3
+ipv4-network = 172.16.1.0/24
+dns = 192.168.0.10
+route = 10.1.0.0/16
+```
+
+```
+# ocpasswd -c /etc/ocserv/ocpasswd vpnuser
+Enter password: yourpass
+Re-enter password: yourpass
+
+# firewall-cmd --add-port=443/tcp --permanent
+# firewall-cmd --add-port=443/udp --permanent
+# firewall-cmd --add-masquerade --permanent
+# firewall-cmd --reload
 ```
 
 客户端安装：  
