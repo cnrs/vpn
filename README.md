@@ -1,5 +1,9 @@
-原文链接：
+原文链接：  
 https://github.com/vpnfast/vpnfast.github.io  
+
+OpenConnect服务端（ocserv）安装  
+https://www.jianshu.com/p/41bc13daf94c  
+https://www.jianshu.com/p/e92eb7b54d1d  
 
 # 2022年9月翻墙软件与科学上网，中国翻墙梯子工具
 
