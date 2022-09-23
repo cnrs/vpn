@@ -5,6 +5,7 @@ OpenConnect服务端（ocserv）安装
 https://github.com/openconnect/openconnect-gui/releases  
 服务器端安装：  
 https://www.jianshu.com/p/41bc13daf94c  
+https://www.infradead.org/ocserv/download/ocserv-1.1.6.tar.xz  
 
 客户端安装：  
 https://www.jianshu.com/p/41bc13daf94c  
