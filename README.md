@@ -45,6 +45,29 @@ Re-enter password: yourpass
 客户端安装：  
 https://www.jianshu.com/p/41bc13daf94c  
 https://www.jianshu.com/p/e92eb7b54d1d  
+```
+yum install epel-release
+yum install openconnect
+
+
+# echo yourpass | openconnect -b \
+-u vpnuser \
+--servercert=pin-sha256:xyz \
+--timestamp \
+--force-dpd=10 \
+--no-dtls \
+vpn.your.com
+
+
+# openconnect -b \
+-c client-zhangsan.p12 \
+--servercert=pin-sha256:xyz \
+--timestamp \
+--force-dpd=10 \
+--no-dtls \
+vpn.your.com
+```
+
 
 # 2022年9月翻墙软件与科学上网，中国翻墙梯子工具
 
