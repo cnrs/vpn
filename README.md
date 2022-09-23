@@ -8,6 +8,9 @@ https://www.jianshu.com/p/41bc13daf94c
 https://www.infradead.org/ocserv/download/ocserv-1.1.6.tar.xz  
 ```
 yum -y install ocserv.x86_64
+systemctl enable ocserv
+#systemctl restart ocserv
+
 ```
 
 客户端安装：  
