@@ -1,3 +1,6 @@
+原文链接：
+https://github.com/vpnfast/vpnfast.github.io  
+
 # 2022年9月翻墙软件与科学上网，中国翻墙梯子工具
 
 ![翻墙, 科学上网, VPN梯子, 翻墙教程, 翻墙工具, 翻墙梯子](https://hotlinkgo.com/wp-content/uploads/2022/05/the-best-vpn-for-china.jpg)
